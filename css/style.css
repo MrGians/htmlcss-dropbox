@@ -17,39 +17,111 @@
 
 
 /* Utilities */
-.container{
-    width: 1000px;
-    margin: 0 auto;
-}
+.debug .border {border: 1px dashed black;}
 
-.main-container {
+.container{
     width: 900px;
     margin: 0 auto;
 }
 
-.d-flex{display: flex;}
+.main-container {
+    width: 800px;
+    margin: 0 auto;
+}
 
+.d-flex{display: flex;}
+.grow {flex-grow: 1;}
+
+.min-w-10 {min-width: 10%;}
 .w-20 {width: 20%;}
 .w-30 {width: 30%;}
 .w-50 {width: 50%;}
+.w-70 {width: 70%;}
 .w-100 {width: 100%;}
 
 .h-100 {height: 100%;}
 
-.px-15{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.py-20{
-    padding-top: 20px;
-    padding-bottom: 20px;
+.p-top-35 {padding-top: 35px;}
+.p-top-50 {padding-top: 50px;}
 
-}
+.m-top-20 {margin-top: 20px;}
 
-.my-30 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+.btn{
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+.btn-primary{
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+}
+.btn-partner{
+    border-top: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    border-left: 2px solid var(--black);
 }
 
 
 /* Generics */
+header {background-color: var(--lightblue);}
+
+header a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+span {display: inline-block;}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* Header */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 50px;
+    background-color: var(--white);
+    align-items: center;
+    margin: 0 15px;
+}
+
+#navbar .logo {display: block;}
+
+#navbar a {
+    padding: 0 15px;
+}
+
+#navbar .menu-navbar div:last-child {text-align: right;}
+
+.menu-navbar div a {
+    line-height: 50px;
+    display: inline-block;
+}
+
+
+/* Header Jumbotron */
+.top-jumbo {
+    height: 80vh;
+    padding-right: 20px;
+}
+
+.top-jumbo div.d-flex {position: relative;}
+
+.top-jumbo img {
+    position: absolute;
+    right: 0;
+    top: 35px;
+}
+
+.top-jumbo p {font-size: 14px;}
+
+.top-jumbo .fa-arrow-down {display: block;}
