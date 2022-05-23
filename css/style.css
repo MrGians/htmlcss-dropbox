@@ -10,6 +10,7 @@
 /* Palette color */
 :root{
     --black: #000;
+    --grey: #AAA;
     --white: #FFF;
     --lightblue: #B4D0E7;
     --blue: #0061FF;
@@ -33,6 +34,7 @@
 .grow {flex-grow: 1;}
 
 .min-w-10 {min-width: 10%;}
+
 .w-20 {width: 20%;}
 .w-30 {width: 30%;}
 .w-50 {width: 50%;}
@@ -43,8 +45,14 @@
 
 .p-top-35 {padding-top: 35px;}
 .p-top-50 {padding-top: 50px;}
+.p-bot-35 {padding-bottom: 35px;}
 
-.m-top-20 {margin-top: 20px;}
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.c-grey {color: var(--grey);}
 
 .btn{
     display: inline-block;
@@ -52,6 +60,8 @@
     color: var(--black);
     padding: 5px 10px;
     border: 1px solid transparent;
+    text-decoration: none;
+    text-align: center;
 }
 .btn-primary{
     background-color: var(--blue);
@@ -74,12 +84,21 @@ header a {
     color: var(--black);
 }
 
-span {display: inline-block;}
-
 h1 {
     font-size: 50px;
     font-weight: 900;
 }
+
+h2 {font-size: 30px;}
+
+p {font-size: 14px;}
+
+li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+
 
 /* Header */
 #navbar {
@@ -87,18 +106,18 @@ h1 {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 
     height: 50px;
     background-color: var(--white);
     align-items: center;
-    margin: 0 15px;
+    padding: 0 15px;
+    box-shadow: 0 0 5px var(--black);
 }
 
 #navbar .logo {display: block;}
 
-#navbar a {
-    padding: 0 15px;
-}
+#navbar a {padding: 0 15px;}
 
 #navbar .menu-navbar div:last-child {text-align: right;}
 
@@ -122,6 +141,57 @@ h1 {
     top: 35px;
 }
 
-.top-jumbo p {font-size: 14px;}
-
 .top-jumbo .fa-arrow-down {display: block;}
+
+
+/* Main */
+main > section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* Business Plan Card Section */
+.annual-plan, .monthly-plan {margin-right: 35px;}
+
+.business-card {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.professional, .advanced, .enterprise, .sales-office {border: 1px solid var(--grey);}
+
+.business-card > div > div:not(:first-child) {padding: 15px;}
+
+.plan-type {
+    border-bottom: 1px solid var(--grey);
+    padding: 5px 0;
+    text-align: center;
+}
+
+.business-card span, .business-card li, .business-card p {font-size: 12px;}
+
+.business-card .fa-ul {margin-left: 20px;}
+
+
+.plan-actions .btn {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.plan-actions span:first-of-type {
+    display: inline-block;
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 35px;
+}
+
+.plan-more-features .fa-check {color: var(--blue);}
+
+
+/* Sales Office Contact Card */
+.sales-office {flex-wrap: wrap;}
+
+.sales-office .plan-name {padding-bottom: 10px;}
+
+
+/* Partner Section */
