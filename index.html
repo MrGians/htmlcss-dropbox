@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gianluca Mura">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Dropbox</title>
 </head>
@@ -25,7 +28,7 @@
                     <img class="logo" src="images/logo-small.png" alt="Dropbox Logo">
                 </a>
             </div>
-            <!-- Menu Navbar -->
+            <!-- Menu Link Navbar -->
             <div class="menu-navbar w-50 grow d-flex border">
                 <!-- Left Navbar link -->
                 <div class="w-50 border">
@@ -47,7 +50,7 @@
         </nav>
 
         <!-- Jumbotron -->
-        <section class="top-jumbo container p-top-50 border">
+        <section class="container p-top-50 border" id="top-jumbo">
             <!-- Jumbotron Title -->
             <div>
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
@@ -59,7 +62,7 @@
                     <p class="p-top-35">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto, Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
                     <a class="btn btn-primary my-20" href="#">Inizia la tua prova gratuita</a>
                     <span>Annulla in qualsiasi momento</span>
-                    <a href="#" class="fa-solid fa-arrow-down fa-2x my-20"></a>
+                    <a href="#card" class="fa-solid fa-arrow-down fa-2x my-20"></a>
                 </div>
                 <!-- Right Column -->
                 <div class="w-70">
@@ -71,10 +74,10 @@
     </header>
 
     <!-- Main -->
-    <main class="main-container">
+    <main class="p-top-50">
 
         <!-- Business Plan Section -->
-        <section class="business-plan p-top-50 border">
+        <section class="business-plan main-container p-top-50 border" id="card">
             <div class="p-bot-35">
                 <h2>Trova il piano business che fa per te</h2>
             </div>
@@ -285,7 +288,16 @@
         </section>
 
         <!-- Partner Section -->
-        <section></section>
+        <section class="partner main-container d-flex">
+            <div class="w-60">
+                <img class="w-100" src="images/partner.png" alt="Dropbox Partner">
+            </div>
+            <div class="w-40">
+                <h3>Entra in contatto con un partner Dropbox</h3>
+                <p class="my-20">Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                <a class="btn btn-partner" href="#">Trova un partner</a>
+            </div>
+        </section>
 
         <!-- Dropbox Feature Section -->
         <section></section>
