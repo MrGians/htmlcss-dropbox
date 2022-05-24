@@ -28,7 +28,7 @@
 
 .main-container {
     width: 800px;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .d-flex{display: flex;}
@@ -200,6 +200,7 @@ li {
 
 .partner div.w-40 {padding: 30px;}
 
+.partner img {display: block;}
 
 /* Dropbox Feature Section */
 .feature-block h3 {padding-bottom: 20px;}
@@ -265,3 +266,23 @@ li {
     align-items: baseline;
     height: min-content;
 }
+
+
+/* FAQ Section */
+.accordion-title {
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    padding: 30px 30px 30px 0;
+
+    justify-content: space-between;
+}
+
+.accordion-title::after {
+    content: "\02C5";
+    font-weight: bold;
+}
+
+.accordion-content {display: none;}
+
+.accordion-title:hover .accordion-content {display: block;}
+
