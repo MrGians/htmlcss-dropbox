@@ -33,6 +33,10 @@
 
 .d-flex{display: flex;}
 .grow {flex-grow: 1;}
+.row {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .min-w-10 {min-width: 10%;}
 
@@ -152,11 +156,6 @@ li {
 /* Business Plan Card Section */
 .annual-plan, .monthly-plan {margin-right: 35px;}
 
-.business-card {
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .professional, .advanced, .enterprise, .sales-office {border: 1px solid var(--grey);}
 
 .business-card > div > div:not(:first-child) {padding: 15px;}
@@ -198,3 +197,7 @@ li {
 }
 
 .partner div.w-40 {padding: 30px;}
+
+
+/* Dropbox Feature Section */
+.feature-block h3 {padding-bottom: 20px;}
