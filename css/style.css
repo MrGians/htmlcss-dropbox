@@ -91,6 +91,18 @@ header a {
     color: var(--black);
 }
 
+footer {
+    height: 60vh;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+}
+
 h1 {
     font-size: 50px;
     font-weight: 900;
@@ -269,6 +281,8 @@ li {
 
 
 /* FAQ Section */
+.accordion {height: 570px;}
+
 .accordion-title {
     border-top: 1px solid var(--grey);
     border-bottom: 1px solid var(--grey);
@@ -286,3 +300,32 @@ li {
 
 .accordion-title:hover .accordion-content {display: block;}
 
+
+/* Footer */
+.footer-menu {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+/* Footer Top */
+.top-footer {flex-wrap: wrap;}
+
+.foot-col h4 {padding: 20px 0;}
+
+
+/* Footer Bottom */
+.language::before {
+    content: "";
+    display: inline-block;
+    width: 65%;
+    border-top: 2px solid var(--grey);
+}
+
+.language select {
+    margin-top: 20px;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
