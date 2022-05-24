@@ -98,7 +98,9 @@ h1 {
 
 h2 {font-size: 30px;}
 
-p {font-size: 14px;}
+p, cite {font-size: 14px;}
+
+cite {font-style: normal;}
 
 li {
     list-style-type: none;
@@ -201,3 +203,65 @@ li {
 
 /* Dropbox Feature Section */
 .feature-block h3 {padding-bottom: 20px;}
+
+
+/* 
+    Our Customers Section 
+
+    --- No code required ---
+*/
+
+
+/* Stakeholder & Partner Section */
+.stakeholder .manifest {
+    height: 450px;
+    width: calc(100% / 3);
+}
+
+.stakeholder, .manifest.d-flex {flex-wrap: wrap;}
+
+.manifest-xs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.manifest-xs img{
+    width: 50%;
+    display: block;
+    filter: invert(1);
+}
+
+.left-box .manifest-xs:nth-child(1) {
+    background-color: #A2D39B;
+    border: 10px solid #D1E9CD;
+}
+.left-box .manifest-xs:nth-child(2) {background-color: #61082B;}
+.left-box .manifest-xs:nth-child(3) {background-color: #0093CE;}
+.left-box .manifest-xs:nth-child(4) {background-color: #FF1C1C;}
+
+.manifest.middle-box {
+    background-color: #F5F5F5;
+    padding: 40px;
+}
+
+.right-box .manifest-xs:nth-child(1) {background-color: #D5001F;}
+.right-box .manifest-xs:nth-child(2) {background-color: #B4D0E7;}
+.right-box .manifest-xs:nth-child(3) {background-color: #0D2481;}
+.right-box .manifest-xs:nth-child(4) {background-color: #FFD830;}
+
+
+/* Full Dropbox Manifest Free Trial */
+.free-trial-manifest {
+    background-color: #B4D0E7;
+    color: #61082B;
+    height: 250px;
+    align-items: center;
+}
+
+.free-trial-manifest div.d-flex {
+    justify-content: space-between;
+    align-items: baseline;
+    height: min-content;
+}
