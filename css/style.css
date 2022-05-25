@@ -76,26 +76,18 @@
     color: var(--white);
     border: 1px solid var(--blue);
 }
-.btn-partner{
-    border-top: 2px solid var(--black);
-    border-right: 2px solid var(--black);
-    border-bottom: 1px solid var(--black);
-    border-left: 2px solid var(--black);
-}
+.btn-secondary{border: 1px solid var(--black);}
 
 .btn:hover {
     box-shadow: 0 0 3px var(--grey);
     border: 1px solid black;
 }
 .btn-primary:hover {
-    background-color: #003b99;
-    border: 1px solid #003b99;
+    background-color: #2f7fff;
+    border: 1px solid #2f7fff;
+    text-shadow: 0 0 3px var(--white);
 }
-.btn-partner:hover {
-    border-top: 2px solid var(--black);
-    border-right: 2px solid var(--black);
-    border-bottom: 1px solid var(--black);
-    border-left: 2px solid var(--black);
+.btn-secondary:hover {
     background-color: var(--black);
     color: var(--white);
     text-shadow: 0 0 3px var(--white);
@@ -162,7 +154,7 @@ li {
 #navbar .menu-navbar div:last-child {text-align: right;}
 
 .menu-navbar div a {
-    line-height: 45px;
+    line-height: 46px;
     display: inline-block;
     border: 2px solid transparent;
 }
@@ -214,10 +206,9 @@ li {
     margin-bottom: 10px;
 }
 
-.plan-actions span:first-of-type {
-    display: inline-block;
-    border-bottom: 1px solid var(--grey);
-    padding-bottom: 35px;
+.plan-actions hr {
+    margin-top: 30px;
+    width: 20%;
 }
 
 .plan-more-features .fa-check {color: var(--blue);}
@@ -263,7 +254,7 @@ li {
     align-items: center;
     height: 50%;
     border: 10px solid transparent;
-    transition: border 0.2s linear;
+    transition: border-color 0.2s linear;
 }
 
 .manifest-xs img{
@@ -272,37 +263,39 @@ li {
     filter: invert(1);
 }
 
+.manifest.middle-box hr {width: 30%;}
+
 .left-box .manifest-xs:nth-child(1) {background-color: #A2D39B;}
-.left-box .manifest-xs:hover:nth-child(1) {border: 10px solid #D1E9CD;}
+.left-box .manifest-xs:hover:nth-child(1) {border-color: #D1E9CD;}
 
 .left-box .manifest-xs:nth-child(2) {background-color: #61082B;}
-.left-box .manifest-xs:hover:nth-child(2) {border: 10px solid #66223d;}
+.left-box .manifest-xs:hover:nth-child(2) {border-color: #66223d;}
 
 .left-box .manifest-xs:nth-child(3) {background-color: #0093CE;}
-.left-box .manifest-xs:hover:nth-child(3) {border: 10px solid #68bbdb;}
+.left-box .manifest-xs:hover:nth-child(3) {border-color: #68bbdb;}
 
 .left-box .manifest-xs:nth-child(4) {background-color: #FF1C1C;}
-.left-box .manifest-xs:hover:nth-child(4) {border: 10px solid #fd4c4c;}
+.left-box .manifest-xs:hover:nth-child(4) {border-color: #fd4c4c;}
 
 .manifest.middle-box {
     background-color: #F5F5F5;
     padding: 40px;
     border: 10px solid transparent;
-    transition: border 0.2s linear;
+    transition: border-color 0.2s linear;
 }
-.manifest.middle-box:hover {border: 10px solid #e0d9d9;}
+.manifest.middle-box:hover {border-color: #e0d9d9;}
 
 .right-box .manifest-xs:nth-child(1) {background-color: #D5001F;}
-.right-box .manifest-xs:hover:nth-child(1) {border: 10px solid #d33a51;}
+.right-box .manifest-xs:hover:nth-child(1) {border-color: #d33a51;}
 
 .right-box .manifest-xs:nth-child(2) {background-color: #B4D0E7;}
-.right-box .manifest-xs:hover:nth-child(2) {border: 10px solid #dee1e4;}
+.right-box .manifest-xs:hover:nth-child(2) {border-color: #dee1e4;}
 
 .right-box .manifest-xs:nth-child(3) {background-color: #0D2481;}
-.right-box .manifest-xs:hover:nth-child(3) {border: 10px solid #4054a5;}
+.right-box .manifest-xs:hover:nth-child(3) {border-color: #4054a5;}
 
 .right-box .manifest-xs:nth-child(4) {background-color: #FFD830;}
-.right-box .manifest-xs:hover:nth-child(4) {border: 10px solid #ffe882;}
+.right-box .manifest-xs:hover:nth-child(4) {border-color: #ffe882;}
 
 
 /* Full Dropbox Manifest Free Trial */
@@ -327,12 +320,18 @@ li {
     border-top: 1px solid var(--grey);
     border-bottom: 1px solid var(--grey);
     padding: 30px 30px 30px 0;
+    cursor: pointer;
 
     justify-content: space-between;
 }
 
 .accordion-title::after {
     content: "\02C5";
+    font-weight: bold;
+}
+
+.accordion-title:hover::after {
+    content: "\02C4";
     font-weight: bold;
 }
 
@@ -347,6 +346,8 @@ li {
     align-items: center;
 }
 
+.footer-menu hr {width: 10%;}
+
 
 /* Footer Top */
 .top-footer {flex-wrap: wrap;}
@@ -355,13 +356,6 @@ li {
 
 
 /* Footer Bottom */
-.language::before {
-    content: "";
-    display: inline-block;
-    width: 65%;
-    border-top: 2px solid var(--grey);
-}
-
 .language select {
     margin-top: 20px;
     background-color: transparent;
