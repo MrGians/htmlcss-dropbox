@@ -15,6 +15,16 @@
     --white: #FFF;
     --lightblue: #B4D0E7;
     --blue: #0061FF;
+    
+    --lightgreen: #A2D39B;
+    --sangria: #61082B;
+    --dodgerblue: #0093CE;
+    --scarlet: #FF1C1C;
+    --whitesmoke: #F5F5F5;
+    --carminio: #D5001F;
+    --bluecornflower: #B4D0E7;
+    --electricblue: #0D2481;
+    --colzayellow: #FFD830;
 }
 
 
@@ -50,6 +60,7 @@
 
 .h-100 {height: 100%;}
 
+.p-15 {padding: 15px;}
 .p-top-35 {padding-top: 35px;}
 .p-top-50 {padding-top: 50px;}
 .p-bot-35 {padding-bottom: 35px;}
@@ -60,6 +71,18 @@
 }
 
 .c-grey {color: var(--grey);}
+
+.bg-lightgreen {background-color: var(--lightgreen);}
+.bg-sangria {background-color: var(--sangria);}
+.bg-dodgerblue {background-color: var(--dodgerblue);}
+.bg-scarlet {background-color: var(--scarlet);}
+.bg-whitesmoke {background-color: var(--whitesmoke);}
+.bg-carminio {background-color: var(--carminio);}
+.bg-bluecorn {background-color: var(--bluecornflower);}
+.bg-electricblue {background-color: var(--electricblue);}
+.bg-colza {background-color: var(--colzayellow);}
+
+.b-grey {border: 1px solid var(--grey);}
 
 .btn{
     display: inline-block;
@@ -131,7 +154,6 @@ li {
 }
 
 
-
 /* Header */
 #navbar {
     position: fixed;
@@ -147,38 +169,39 @@ li {
     box-shadow: 0 0 5px var(--black);
 }
 
-#navbar .logo {display: block;}
-
 #navbar a {padding: 0 15px;}
 
-#navbar .menu-navbar div:last-child {text-align: right;}
 
-.menu-navbar div a {
+/* Navbar | Menu Logo */
+#menu-logo .logo {display: block;}
+
+
+/* Navbar | Menu Navbar Link */
+#menu-navbar li {display: inline-block;}
+#menu-navbar .right-nav {text-align: right;}
+
+#menu-navbar a {
     line-height: 46px;
     display: inline-block;
     border: 2px solid transparent;
 }
 
-.menu-navbar a:hover {
-    border-bottom: 2px solid var(--black);
-}
+#menu-navbar a:hover {border-bottom: 2px solid var(--black);}
 
 
 /* Header Jumbotron */
-#top-jumbo {
+#jumbotron {
     height: 80vh;
     padding-right: 20px;
 }
 
-#top-jumbo div.d-flex {position: relative;}
-
-#top-jumbo img {
-    position: absolute;
+#jumbotron .jumbo-col {
+    position: relative;
     right: 0;
-    top: 35px;
+    top: 40px;
 }
 
-#top-jumbo .fa-arrow-down {display: block;}
+#jumbotron .fa-arrow-down {display: block;}
 
 
 /* Main */
@@ -186,20 +209,15 @@ li {
 /* Business Plan Card Section */
 .annual-plan, .monthly-plan {margin-right: 35px;}
 
-.professional, .advanced, .enterprise, .sales-office {border: 1px solid var(--grey);}
+#business-card span, #business-card li, #business-card p {font-size: 12px;}
 
-.business-card > div > div:not(:first-child) {padding: 15px;}
+#business-card .fa-ul {margin-left: 20px;}
 
 .plan-type {
     border-bottom: 1px solid var(--grey);
     padding: 5px 0;
     text-align: center;
 }
-
-.business-card span, .business-card li, .business-card p {font-size: 12px;}
-
-.business-card .fa-ul {margin-left: 20px;}
-
 
 .plan-actions .btn {
     font-size: 14px;
@@ -211,23 +229,24 @@ li {
     width: 20%;
 }
 
-.plan-more-features .fa-check {color: var(--blue);}
+.plan-highlights .fa-check {color: var(--blue);}
 
 
 /* Sales Office Contact Card */
-.sales-office {flex-wrap: wrap;}
+#sales-office {flex-wrap: wrap;}
 
-.sales-office .plan-name {padding-bottom: 10px;}
+#sales-office h3 {padding-bottom: 10px;}
 
 
 /* Partner Section */
-.partner {
+#partner {
     align-items: center;
 }
 
-.partner div.w-40 {padding: 30px;}
+.partner-content {padding: 30px;}
 
-.partner img {display: block;}
+.partner-img img {display: block;}
+
 
 /* Dropbox Feature Section */
 .feature-block h3 {padding-bottom: 20px;}
@@ -241,12 +260,13 @@ li {
 
 
 /* Stakeholder & Partner Section */
-.stakeholder .manifest {
+
+#stakeholder .manifest {
     height: 450px;
     width: calc(100% / 3);
 }
 
-.stakeholder, .manifest.d-flex {flex-wrap: wrap;}
+#stakeholder, .manifest.d-flex {flex-wrap: wrap;}
 
 .manifest-xs {
     display: flex;
@@ -263,45 +283,32 @@ li {
     filter: invert(1);
 }
 
-.manifest.middle-box hr {width: 30%;}
-
-.left-box .manifest-xs:nth-child(1) {background-color: #A2D39B;}
-.left-box .manifest-xs:hover:nth-child(1) {border-color: #D1E9CD;}
-
-.left-box .manifest-xs:nth-child(2) {background-color: #61082B;}
-.left-box .manifest-xs:hover:nth-child(2) {border-color: #66223d;}
-
-.left-box .manifest-xs:nth-child(3) {background-color: #0093CE;}
-.left-box .manifest-xs:hover:nth-child(3) {border-color: #68bbdb;}
-
-.left-box .manifest-xs:nth-child(4) {background-color: #FF1C1C;}
-.left-box .manifest-xs:hover:nth-child(4) {border-color: #fd4c4c;}
-
 .manifest.middle-box {
-    background-color: #F5F5F5;
     padding: 40px;
     border: 10px solid transparent;
     transition: border-color 0.2s linear;
 }
-.manifest.middle-box:hover {border-color: #e0d9d9;}
 
-.right-box .manifest-xs:nth-child(1) {background-color: #D5001F;}
-.right-box .manifest-xs:hover:nth-child(1) {border-color: #d33a51;}
+.manifest.middle-box hr {width: 30%;}
 
-.right-box .manifest-xs:nth-child(2) {background-color: #B4D0E7;}
-.right-box .manifest-xs:hover:nth-child(2) {border-color: #dee1e4;}
 
-.right-box .manifest-xs:nth-child(3) {background-color: #0D2481;}
-.right-box .manifest-xs:hover:nth-child(3) {border-color: #4054a5;}
+/* Manifest Box Hover */
+.left-box .bg-lightgreen:hover {border-color: #D1E9CD;}
+.left-box .bg-sangria:hover {border-color: #66223d;}
+.left-box .bg-dodgerblue:hover {border-color: #68bbdb;}
+.left-box .bg-scarlet:hover {border-color: #fd4c4c;}
 
-.right-box .manifest-xs:nth-child(4) {background-color: #FFD830;}
-.right-box .manifest-xs:hover:nth-child(4) {border-color: #ffe882;}
+.middle-box.bg-whitesmoke:hover {border-color: #e0d9d9;}
+
+.right-box .bg-carminio:hover {border-color: #d33a51;}
+.right-box .bg-bluecorn:hover {border-color: #dee1e4;}
+.right-box .bg-electricblue:hover {border-color: #4054a5;}
+.right-box .bg-colza:hover {border-color: #ffe882;}
 
 
 /* Full Dropbox Manifest Free Trial */
 .free-trial-manifest {
-    background-color: #B4D0E7;
-    color: #61082B;
+    color: var(--sangria);
     height: 250px;
     align-items: center;
 }
@@ -314,7 +321,7 @@ li {
 
 
 /* FAQ Section */
-.accordion {height: 570px;}
+#accordion {height: 85vh;}
 
 .accordion-title {
     border-top: 1px solid var(--grey);
@@ -341,16 +348,16 @@ li {
 
 
 /* Footer */
-.footer-menu {
+#footer-menu {
     flex-wrap: wrap;
     align-items: center;
 }
 
-.footer-menu hr {width: 10%;}
+#footer-menu hr {width: 10%;}
 
 
 /* Footer Top */
-.top-footer {flex-wrap: wrap;}
+#top-footer {flex-wrap: wrap;}
 
 .foot-col h4 {padding: 20px 0;}
 

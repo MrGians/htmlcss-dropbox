@@ -15,58 +15,70 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Dropbox</title>
 </head>
-<body class="p-top-50 debug">
+<body class="p-top-50">
 
     <!-- Header -->
     <header>
 
         <!-- Navbar -->
-        <nav class="d-flex" id="navbar">
+        <nav id="navbar" class="d-flex">
+
             <!-- Menu Logo Dropbox -->
-            <div class="menu-logo min-w-10">
+            <div id="menu-logo" class="menu-logo min-w-10">
                 <a href="#">
                     <img class="logo" src="images/logo-small.png" alt="Dropbox Logo">
                 </a>
             </div>
+
             <!-- Menu Link Navbar -->
-            <div class="menu-navbar w-50 grow d-flex">
+            <div id="menu-navbar" class="w-50 grow d-flex">
+
                 <!-- Left Navbar link -->
-                <div class="w-50">
-                    <a href="#">Perchè Dropbox</a>
-                    <a href="#">Funzioni</a>
-                    <a href="#">Piani e Prezzi</a>
+                <div class="left-nav w-50">
+                    <ul>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="#">Funzioni</a></li>
+                        <li><a href="#">Piani e Prezzi</a></li>
+                    </ul>
                 </div>
+
                 <!-- Right Navbar link -->
-                <div class="w-50">
-                    <a href="#">Supporto</a>
-                    <a href="#">Contatta l'ufficio vendite</a>
+                <div class="right-nav w-50">
+                    <ul>
+                        <li><a href="#">Supporto</a></li>
+                        <li><a href="#">Contatta l'ufficio vendite</a></li>
+                    </ul>  
                 </div>
             </div>
+
             <!-- Menu Actions -->
-            <div class="menu-actions min-w-10">
+            <div id="menu-actions" class="min-w-10">
                 <a class="btn" href="#">Accedi</a>
                 <a class="btn btn-primary" href="#">Inizia</a>
             </div>
+            
         </nav>
 
         <!-- Jumbotron -->
-        <section class="container p-top-50" id="top-jumbo">
+        <section id="jumbotron" class="container p-top-50">
+
             <!-- Jumbotron Title -->
-            <div>
-                <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-            </div>
+            <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+
             <!-- Jumbotron Column -->
-            <div class="w-100 d-flex">
-                <!-- Left Column -->
+            <div class="jumbo-col w-100 d-flex">
+
+                <!-- Jumbotron Content | Left Column -->
                 <div class="w-30">
-                    <p class="p-top-35">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto, Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                    <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto, Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
                     <a class="btn btn-primary my-20" href="#">Inizia la tua prova gratuita</a>
                     <span>Annulla in qualsiasi momento</span>
-                    <a href="#card" class="fa-solid fa-arrow-down fa-2x my-20"></a>
+                    <a href="#business-plan" class="fa-solid fa-arrow-down fa-2x my-20"></a>
                 </div>
-                <!-- Right Column -->
+
+                <!-- Jumbotron Image | Right Column -->
                 <div class="w-70">
-                    <img class="w-70" src="images/jumbo.png" alt="Dropbox Preview">
+                    <img class="w-100" src="images/jumbo.png" alt="Dropbox Preview">
                 </div>
             </div>
         </section>
@@ -77,10 +89,9 @@
     <main class="p-top-50">
 
         <!-- Business Plan Section -->
-        <section class="business-plan main-container" id="card">
-            <div class="p-bot-35">
-                <h2>Trova il piano business che fa per te</h2>
-            </div>
+        <section id="business-plan" class="main-container">
+            <!-- Business Plan Section Title -->
+            <h2 class="p-bot-35">Trova il piano business che fa per te</h2>
 
             <!-- Business Plan Payment Choice Monthly/Annual -->
             <div class="p-bot-35">
@@ -93,22 +104,28 @@
             </div>
 
             <!-- Business Card -->
-            <div class="business-card d-flex row">
+            <div id="business-card" class="d-flex row">
 
                 <!-- Professional -->
-                <div class="professional w-30">
+                <div id="professional" class="b-grey w-30">
+
+                    <!-- Business Plan Type -->
                     <div class="plan-type single-plan">
                         <span class="fa-solid fa-user"></span>
                         <span>Singolo</span>
                     </div>
-                    <div class="plan-name">
-                        <h3>Professional</h3>
-                    </div>
-                    <div class="plan-price">
+
+                    <!-- Business Plan Name -->
+                    <h3 class="p-15">Professional</h3>
+
+                    <!-- Business Plan Price -->
+                    <div class="plan-price p-15">
                         <h5>&euro; 12.00</h5>
                         <span class="c-grey">/mese</span>
                     </div>
-                    <div class="plan-basic-info">
+
+                    <!-- Business Plan Basic Information -->
+                    <div class="plan-info p-15">
                         <ul class="fa-ul">
                             <li>
                                 <span class="fa-li"><i class="fa-solid fa-user"></i></span>
@@ -124,15 +141,17 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="plan-actions">
+
+                    <!-- Business Plan CTA -->
+                    <div class="plan-actions p-15">
                         <a class="btn btn-primary w-100" href="#">Prova Gratis per 30 giorni</a>
                         <span>oppure <a href="#">acquista ora</a></span>
                         <hr/>
                     </div>
-                    <div class="plan-features-title">
-                        <h5>Punti Salienti del piano</h5>
-                    </div>
-                    <div class="plan-more-features">
+
+                    <!-- Business Plan Highlights -->
+                    <h5 class="p-15">Punti Salienti del piano</h5>
+                    <div class="plan-highlights p-15">
                         <ul class="fa-ul">
                             <li>
                                 <span class="fa-li"><i class="fa-solid fa-check"></i></span>
@@ -144,22 +163,29 @@
                             </li>
                         </ul>
                     </div>
+                    
                 </div>
 
                 <!-- Advanced -->
-                <div class="advanced w-30">
+                <div id="advanced" class="b-grey w-30">
+
+                    <!-- Business Plan Type -->
                     <div class="plan-type team-plan">
                         <span class="fa-solid fa-users"></span>
                         <span>Team</span>
                     </div>
-                    <div class="plan-name">
-                        <h3>Advanced</h3>
-                    </div>
-                    <div class="plan-price">
+
+                    <!-- Business Plan Name -->
+                    <h3 class="p-15">Advanced</h3>
+
+                    <!-- Business Plan Price -->
+                    <div class="plan-price p-15">
                         <h5>&euro; 18.00</h5>
                         <span class="c-grey">/utente/mese</span>
                     </div>
-                    <div class="plan-basic-info">
+
+                    <!-- Business Plan Basic Information -->
+                    <div class="plan-info p-15">
                         <ul class="fa-ul">
                             <li>
                                 <span class="fa-li"><i class="fa-solid fa-users"></i></span>
@@ -175,15 +201,17 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="plan-actions">
+
+                    <!-- Business Plan CTA -->
+                    <div class="plan-actions p-15">
                         <a class="btn btn-primary w-100" href="#">Prova Gratis per 30 giorni</a>
                         <span>oppure <a href="#">acquista ora</a></span>
                         <hr/>
                     </div>
-                    <div class="plan-features-title">
-                        <h5>Punti Salienti del piano</h5>
-                    </div>
-                    <div class="plan-more-features">
+
+                    <!-- Business Plan Highlights -->
+                    <h5 class="p-15">Punti Salienti del piano</h5>
+                    <div class="plan-highlights p-15">
                         <ul class="fa-ul">
                             <li>
                                 <span class="fa-li"><i class="fa-solid fa-check"></i></span>
@@ -207,22 +235,29 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
 
                 <!-- Enterprise -->
-                <div class="enterprise w-30">
+                <div id="enterprise" class="b-grey w-30">
+
+                    <!-- Business Plan Type -->
                     <div class="plan-type agency-plan">
                         <span class="fa-solid fa-building"></span>
                         <span>Azienda</span>
                     </div>
-                    <div class="plan-name">
-                        <h3>Enterprise</h3>
-                    </div>
-                    <div class="plan-price">
+
+                    <!-- Business Plan Name -->
+                    <h3 class="p-15">Enterprise</h3>
+                    
+                    <!-- Business Plan Price -->
+                    <div class="plan-price p-15">
                         <h5>Contattaci</h5>
                         <span class="c-grey">-</span>
                     </div>
-                    <div class="plan-basic-info">
+
+                    <!-- Business Plan Basic Information -->
+                    <div class="plan-info p-15">
                         <ul class="fa-ul">
                             <li>
                                 <span class="fa-li"><i class="fa-solid fa-user"></i></span>
@@ -238,15 +273,17 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="plan-actions">
+
+                    <!-- Business Plan CTA -->
+                    <div class="plan-actions p-15">
                         <a class="btn btn-primary w-100" href="#">Contattaci</a>
                         <span>oppure <a href="#">acquista ora</a></span>
                         <hr/>
                     </div>
-                    <div class="plan-features-title">
-                        <h5>Punti Salienti del piano</h5>
-                    </div>
-                    <div class="plan-more-features">
+
+                    <!-- Business Plan Highlights -->
+                    <h5 class="p-15">Punti Salienti del piano</h5>
+                    <div class="plan-highlights p-15">
                         <ul class="fa-ul">
                             <li>
                                 <span class="fa-li"><i class="fa-solid fa-check"></i></span>
@@ -262,28 +299,30 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
 
                 <!-- Sales Office Contact Card-->
-                <div class="sales-office d-flex w-100 my-20">
+                <div id="sales-office" class="b-grey d-flex w-100 my-20">
+
+                    <!-- Sales Office Plan Type -->
                     <div class="plan-type w-100 agency-plan">
                         <span class="fa-solid fa-building"></span>
                         <span>Azienda</span>
                     </div>
-                    <div class="w-70">
-                        <div class="plan-name">
-                            <h3>Enterprise</h3>
-                        </div>
-                        <div class="plan-price p-bot-35">
-                            <h5>Contatta l'ufficio vendite per i prezzi</h5>
-                        </div>
-                        <div class="plan-basic-info">
-                            <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
-                        </div>
+
+                    <!-- Sales Office Plan Name & Information -->
+                    <div class="plan-info w-70 p-15">
+                        <h3>Enterprise</h3>
+                        <h5 class="p-bot-35">Contatta l'ufficio vendite per i prezzi</h5>
+                        <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
                     </div>
-                    <div class="plan-actions w-30">
-                        <a class="btn btn-primary" href="#">Contatta l'ufficio vendite</a>
+
+                    <!-- Sales Office CTA -->
+                    <div class="plan-actions w-30 p-15">
+                        <a class="btn btn-primary w-100" href="#">Contatta l'ufficio vendite</a>
                     </div>
+
                 </div>
             </div>
 
@@ -291,11 +330,15 @@
         </section>
 
         <!-- Partner Section -->
-        <section class="partner main-container d-flex">
-            <div class="w-60">
+        <section id="partner" class="main-container d-flex">
+
+            <!-- Left Column | Partner Image -->
+            <div class="partner-img w-60">
                 <img class="w-100" src="images/partner.png" alt="Dropbox Partner">
             </div>
-            <div class="w-40">
+
+            <!-- Right Column | Partner Content -->
+            <div class="partner-content w-40">
                 <h3>Entra in contatto con un partner Dropbox</h3>
                 <p class="my-20">Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
                 <a class="btn btn-secondary" href="#">Trova un partner</a>
@@ -303,10 +346,9 @@
         </section>
 
         <!-- Dropbox Feature Section -->
-        <section class="dropbox-feature main-container">
-            <div class="w-100 p-bot-35">
-                <h2>Esegui più operazioni con Dropbox Business</h2>
-            </div>
+        <section id="dropbox-feature" class="main-container">
+            <h2 class="p-bot-35">Esegui più operazioni con Dropbox Business</h2>
+
             <!-- Row Feature Blocks -->
             <div class="d-flex row w-100">
 
@@ -356,7 +398,7 @@
         </section>
 
         <!-- Our Customers Section -->
-        <section class="our-customers main-container">
+        <section id="our-customers" class="main-container">
             <div class="w-60">
                 <h2 class="p-bot-35">Più di 500.000 team utilizzano Dropbox Business</h2>
                 <a href="#">Scopri di più sui nostri clienti</a>
@@ -364,27 +406,27 @@
         </section>
 
         <!-- Stakeholder & Partner Section -->
-        <section class="stakeholder d-flex">
+        <section id="stakeholder" class="d-flex">
 
             <!-- Left Main-Manifest Box -->
             <div class="manifest left-box d-flex">
                 <!-- Small Manifest Box Inside Left Main-Manifest Box -->
-                <div class="manifest-xs w-50">
+                <div class="manifest-xs w-50 bg-lightgreen">
                     <img src="images/designit.svg" alt="Design IT">
                 </div>
-                <div class="manifest-xs w-50">
+                <div class="manifest-xs w-50 bg-sangria">
                     <img src="images/arizona_state_university.svg" alt="Arizona State University">
                 </div>
-                <div class="manifest-xs w-50">
+                <div class="manifest-xs w-50 bg-dodgerblue">
                     <img src="images/university_of_florida.svg" alt="University of Florida">
                 </div>
-                <div class="manifest-xs w-50">
+                <div class="manifest-xs w-50 bg-scarlet">
                     <img src="images/topps.svg" alt="Topps">
                 </div>
             </div>
 
             <!-- Middle Main-Manifest Box -->
-            <div class="manifest middle-box">
+            <div class="manifest middle-box bg-whitesmoke">
                 <div class="p-bot-35">
                     <img class="w-50" src="images/designit.svg" alt="Design IT a wipro company">
                 </div>
@@ -398,26 +440,24 @@
             <!-- Right Main-Manifest Box -->
             <div class="manifest right-box d-flex">
                 <!-- Small Manifest Box Inside Right Main-Manifest Box -->
-                <div class="manifest-xs w-50">
+                <div class="manifest-xs w-50 bg-carminio">
                     <img src="images/world_bicycle_relief.svg" alt="World Bicycle Relief">
                 </div>
-                <div class="manifest-xs w-50">
+                <div class="manifest-xs w-50 bg-bluecorn">
                     <img src="images/hearst_corp.svg" alt="Hearst Corp">
                 </div>
-                <div class="manifest-xs w-50">
+                <div class="manifest-xs w-50 bg-electricblue">
                     <img src="images/lonely_planet.svg" alt="Lonely Planet">
                 </div>
-                <div class="manifest-xs w-50">
+                <div class="manifest-xs w-50 bg-colza">
                     <img src="images/clear_channel.svg" alt="Clear Channel">
                 </div>
             </div>
 
             <!-- Full Dropbox Manifest Free Trial for Company -->
-            <div class="free-trial-manifest d-flex w-100">
+            <div class="free-trial-manifest d-flex w-100 bg-bluecorn">
                 <div class="main-container d-flex">
-                    <div class="w-50">
-                        <h2>Porta Dropbox Business nella tua azienda.</h2>
-                    </div>
+                    <h2 class="w-50">Porta Dropbox Business nella tua azienda.</h2>
                     <div class="w-30">
                         <a class="btn w-100" href="">Inizia la tua prova gratuita</a>
                     </div>
@@ -426,11 +466,12 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="accordion">
+        <section id="accordion">
             <div class="main-container">
-                <div class="p-bot-35">
-                    <h2>Domande frequenti</h2>
-                </div>
+                <!-- Accordion Title Section -->
+                <h2 class="p-bot-35">Domande frequenti</h2>
+
+                <!-- Accordion Single Q/A Content -->
                 <div class="accordion-title d-flex">
                     <div>
                         <h5>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h5>
@@ -439,6 +480,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Accordion Single Q/A Content -->
                 <div class="accordion-title d-flex">
                     <div>
                         <h5>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h5>
@@ -447,6 +489,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Accordion Single Q/A Content -->
                 <div class="accordion-title d-flex">
                     <div>
                         <h5>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</h5>
@@ -463,156 +506,151 @@
 
     <!-- Footer -->
     <footer>
-        <section class="footer-menu d-flex h-100 container">
+        <section id="footer-menu" class="d-flex h-100 container">
 
             <!-- Footer Top -->
-            <div class="top-footer w-100 d-flex">
+            <div id="top-footer" class="w-100 d-flex">
 
                 <!-- #1 Footer Column -->
                 <div class="foot-col w-20">
                     <!-- Footer Column Title -->
-                    <div>
-                        <h4>Dropbox</h4>
-                    </div>
+                    <h4>Dropbox</h4>
+
                     <!-- Footer Column Link -->
                     <div>
                         <ul>
-                        <li>
-                            <a href="#">Applicazione desktop</a>
-                        </li>
-                        <li>
-                            <a href="#">Perché Dropbox</a>
-                        </li>
-                        <li>
-                            <a href="#">Piani</a>
-                        </li>
-                        <li>
-                            <a href="#">Sicurezza</a>
-                        </li>
-                        <li>
-                            <a href="#">Funzioni</a>
-                        </li>
-                    </ul>
-                </div>
+                            <li>
+                                <a href="#">Applicazione desktop</a>
+                            </li>
+                            <li>
+                                <a href="#">Perché Dropbox</a>
+                            </li>
+                            <li>
+                                <a href="#">Piani</a>
+                            </li>
+                            <li>
+                                <a href="#">Sicurezza</a>
+                            </li>
+                            <li>
+                                <a href="#">Funzioni</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             
                 <!-- #2 Footer Column -->
                 <div class="foot-col w-20">
-                <!-- Footer Column Title -->
-                <div>
+                    <!-- Footer Column Title -->
                     <h4>Prodotti</h4>
-                </div>
-                <!-- Footer Column Link -->
-                <div>
-                    <ul>
-                        <li>
-                            <a href="#">Applicazione desktop</a>
-                        </li>
-                        <li>
-                            <a href="#">Perché Dropbox</a>
-                        </li>
-                        <li>
-                            <a href="#">Piani</a>
-                        </li>
-                        <li>
-                            <a href="#">Sicurezza</a>
-                        </li>
-                        <li>
-                            <a href="#">Funzioni</a>
-                        </li>
-                    </ul>
-                </div>
+
+                    <!-- Footer Column Link -->
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">Applicazione desktop</a>
+                            </li>
+                            <li>
+                                <a href="#">Perché Dropbox</a>
+                            </li>
+                            <li>
+                                <a href="#">Piani</a>
+                            </li>
+                            <li>
+                                <a href="#">Sicurezza</a>
+                            </li>
+                            <li>
+                                <a href="#">Funzioni</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             
                 <!-- #3 Footer Column -->
                 <div class="foot-col w-20">
-                <!-- Footer Column Title -->
-                <div>
+                    <!-- Footer Column Title -->
                     <h4>Azienda</h4>
-                </div>
-                <!-- Footer Column Link -->
-                <div>
-                    <ul>
-                        <li>
-                            <a href="#">Applicazione desktop</a>
-                        </li>
-                        <li>
-                            <a href="#">Perché Dropbox</a>
-                        </li>
-                        <li>
-                            <a href="#">Piani</a>
-                        </li>
-                        <li>
-                            <a href="#">Sicurezza</a>
-                        </li>
-                        <li>
-                            <a href="#">Funzioni</a>
-                        </li>
-                    </ul>
-                </div>
+
+                    <!-- Footer Column Link -->
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">Applicazione desktop</a>
+                            </li>
+                            <li>
+                                <a href="#">Perché Dropbox</a>
+                            </li>
+                            <li>
+                                <a href="#">Piani</a>
+                            </li>
+                            <li>
+                                <a href="#">Sicurezza</a>
+                            </li>
+                            <li>
+                                <a href="#">Funzioni</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             
                 <!-- #4 Footer Column -->
                 <div class="foot-col w-20">
-                <!-- Footer Column Title -->
-                <div>
+                    <!-- Footer Column Title -->
                     <h4>Supporto</h4>
-                </div>
-                <!-- Footer Column Link -->
-                <div>
-                    <ul>
-                        <li>
-                            <a href="#">Applicazione desktop</a>
-                        </li>
-                        <li>
-                            <a href="#">Perché Dropbox</a>
-                        </li>
-                        <li>
-                            <a href="#">Piani</a>
-                        </li>
-                        <li>
-                            <a href="#">Sicurezza</a>
-                        </li>
-                        <li>
-                            <a href="#">Funzioni</a>
-                        </li>
-                    </ul>
-                </div>
+
+                    <!-- Footer Column Link -->
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">Applicazione desktop</a>
+                            </li>
+                            <li>
+                                <a href="#">Perché Dropbox</a>
+                            </li>
+                            <li>
+                                <a href="#">Piani</a>
+                            </li>
+                            <li>
+                                <a href="#">Sicurezza</a>
+                            </li>
+                            <li>
+                                <a href="#">Funzioni</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- #5 Footer Column -->
                 <div class="foot-col w-20">
-                <!-- Footer Column Title -->
-                <div>
+                    <!-- Footer Column Title -->
                     <h4>Community</h4>
-                </div>
-                <!-- Footer Column Link -->
-                <div>
-                    <ul>
-                        <li>
-                            <a href="#">Applicazione desktop</a>
-                        </li>
-                        <li>
-                            <a href="#">Perché Dropbox</a>
-                        </li>
-                        <li>
-                            <a href="#">Piani</a>
-                        </li>
-                        <li>
-                            <a href="#">Sicurezza</a>
-                        </li>
-                        <li>
-                            <a href="#">Funzioni</a>
-                        </li>
-                    </ul>
-                </div>
+
+                    <!-- Footer Column Link -->
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">Applicazione desktop</a>
+                            </li>
+                            <li>
+                                <a href="#">Perché Dropbox</a>
+                            </li>
+                            <li>
+                                <a href="#">Piani</a>
+                            </li>
+                            <li>
+                                <a href="#">Sicurezza</a>
+                            </li>
+                            <li>
+                                <a href="#">Funzioni</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             
             </div>
             <hr/>
 
             <!-- Footer Bottom -->
-            <div class="bot-footer w-100">
+            <div id="bot-footer" class="w-100">
 
                 <!-- Button Selected Language -->
                 <div class="language w-20">
